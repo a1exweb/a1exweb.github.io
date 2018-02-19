@@ -23,7 +23,7 @@ body{
 	margin: 0;
 	}
 	#top_header .wrap{
-		margin: 0 24px 0 60px;
+		margin: 0 10px 0 30px;
 	}
 }
 
@@ -449,7 +449,8 @@ main .lists{
 }
 
 main .lists div{
-	margin-right: 15px;
+	margin-right: 20px;
+	width: 194px;
 }
 
 main .lists span{
@@ -643,7 +644,10 @@ footer .right a{
 	main .sidebar .form input[type="submit"]{
 		padding: 10px 48px;
 	}
-
+	main .lists div{
+		margin: 10px auto;
+		width: 25%;
+	}
 }
 
 @media (max-width: 910px){
