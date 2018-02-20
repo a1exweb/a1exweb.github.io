@@ -683,11 +683,11 @@ footer .right a{
 		margin: 19px auto 0;
 		width: 90%;
 	}
-	main .sidebar .form input[type="submit"], main .sidebar .form input[type="text"]{
+	main .sidebar .form input[type="text"]{
 		width: 95%;
 	}
-	main .sidebar .form select{
-		width: 97%;
+	main .sidebar .form select, main .sidebar .form input[type="submit"]{
+		width: 98%;
 	}
 	main #cnt{
 		width: 100%;
