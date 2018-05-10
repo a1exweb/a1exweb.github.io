@@ -125,19 +125,19 @@ main {
     color: #fff;
 }
 
-main h1{
-    font-size: 1.5em;
+main h1 {
+    font-size: 2.5em;
 }
 
-main h2{
-    font-size: 1em;
+main h2 {
+    font-size: 1.5em;
 }
 
 .container {
     background: url(../images/3d-header.png) no-repeat 5vh 15vh;
 }
 
-main form{
+main form {
     background-color: rgba(0, 0, 0, 0.151);
     padding: 15px;
     text-align: center;
@@ -147,8 +147,12 @@ main form .but{
     text-align: right;
 }
 
+input#exampleInputName2, input#exampleInputEmail1 {
+    height: 30px;
+}
+
 .btn-default {
-    height: 35px;
+    height: 30px;
     width: 195px;
     font-family: RobotoMedium !important;
     background-color: #04a5f5;
@@ -235,9 +239,9 @@ p.name {
 
 @media (max-width: 1200px){
     .block-date {
-        background-size: 256px 57px;
+        background-size: 226px 57px;
         height: 57px;
-        width: 256px;
+        width: 226px;
         font-size: 2em;
         line-height: 57px;
         margin: 0 auto;
@@ -248,7 +252,7 @@ p.name {
     header {
         text-align: center;
     }
-    header, footer, main, .footer-bg {
+    footer, main, .footer-bg {
         height: 400px;
     }
     .btn-default {
@@ -280,18 +284,30 @@ p.name {
     .img.img-circle {
         margin-bottom: 15px;
     }
+	.map-place{
+		font-size: 1em;
+	}
 }
 
 @media (max-width: 990px){
-    main, .footer-bg {
-        height: 400px;
+    main{
+        height: 500px;
     }
+	header{
+		height: 400px;
+	}
+	.footer-bg {
+		height: 400px;
+	}
 }
 
 @media (max-width: 540px){
     main {
-        height: 500px;
+        height: 700px;
     }
+	header{
+		height: 400px;
+	}
     .footer-bg {
         height: 400px;
     }
@@ -311,6 +327,11 @@ p.name {
     }
 }
 
+@media (max-width: 340px){
+	main {
+        height: 800px;
+    }
+}
 
 
 
