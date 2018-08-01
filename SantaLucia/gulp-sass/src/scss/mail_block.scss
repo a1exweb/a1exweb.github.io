@@ -1,0 +1,90 @@
+@import "partials/params";
+@import "partials/mixins";
+
+footer {
+  background-color: #f5f7fa;
+  padding-bottom: 98px;
+
+  // Заголовки
+  h2 {
+    @include big-title;
+  }
+  h3 {
+    @include small-title;
+  }
+  .subject_title {
+    display: flex;
+    justify-content: center;
+  }
+
+  // Форма обратной связи
+
+  $padding: 50px;
+
+  form {
+    min-width: 430px - $padding;
+    min-height: 490px - $padding;
+    padding: $padding;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 15px 25px 0 rgba(118, 34, 81, 0.2);
+    margin-top: 60px;
+  }
+
+  input:required:invalid {
+    border:1px solid #f3295d;
+  }
+
+  #container-mail {
+    display: flex;
+    justify-content: center;
+    label {
+      font-weight: normal;
+    }
+    .form-control {
+      border-radius: 0px;
+      height: 50px;
+    }
+
+    .send {
+      width: 340px - $padding - 10px;
+      height: 54px;
+      border-radius: 50px;
+      background-color: $default_color;
+      border: 0;
+      margin-top: 30px;
+      text-transform: uppercase;
+      font-family: GothamPro;
+      font-size: 17px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 0.71;
+      letter-spacing: 1.4px;
+      color: #ffffff;
+
+      &:hover {
+        background-color: $hover_button-full;
+      }
+      &:active {
+        background-color: $active_button-full;
+      }
+    }
+  }
+
+  .green-overlay {
+    color: #0c6d16;
+  }
+}
+
+@media (max-width: 500px) {
+  footer #container-mail .send {
+    width: 180px !important;
+    line-height: 20px;
+  }
+  footer form {
+    width: 280px;
+    min-width: 250px !important;
+  }
+}
+

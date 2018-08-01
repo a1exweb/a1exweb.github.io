@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+<font id="rubsvg" horiz-adv-x="512">
+<font-face font-family="rubsvg" units-per-em="512" ascent="480" descent="-32"/>
+<missing-glyph horiz-adv-x="512" />
+
+<glyph glyph-name="rub" unicode="&#112;" d="M82 272l52 0 0 230 131 0c25 0 47-3 67-8 21-6 38-14 52-25 15-12 26-26 34-43 8-18 12-38 12-62 0-24-4-45-13-63-8-18-20-32-35-44-15-12-32-21-53-26-20-6-42-9-65-9l-73 0 0-73 116 0 0-47-116 0 0-102-57 0 0 102-52 0 0 47 52 0 0 73-52 0z m183 0c34 0 60 8 79 23 19 15 28 38 28 69 0 31-9 53-28 67-19 14-45 21-79 21l-74 0 0-180z"/>
+</font></defs></svg>

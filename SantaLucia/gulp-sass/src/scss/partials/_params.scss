@@ -1,0 +1,76 @@
+$default_color: #f3295d;
+$active_button-border: #bb0a38;
+
+$hover_button-full: #dd0c42;
+$active_button-full: #bb0a38;
+
+$default-fz: 16px;
+
+
+@font-face{
+
+  font-family: 'GothamPro-Bold';
+
+  src: url('css/fonts/GothamProBold.eot');
+
+  src: url('css/fonts/GothamProBold.eot') format('eot'),
+
+  url('css/fonts/GothamProBold.woff') format('woff'),
+
+  url('css/fonts/GothamProBold.woff') format('woff2'),
+
+  url('css/fonts/GothamProBold.ttf') format('truetype'),
+
+  url('css/fonts/GothamProBold.svg') format('svg');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+}
+
+@font-face{
+
+  font-family: 'GothamPro-Medium';
+
+  src: url('css/fonts/GothamProMedium.eot');
+
+  src: url('css/fonts/GothamProMedium.eot') format('eot'),
+
+  url('css/fonts/GothamProMedium.woff') format('woff'),
+
+  url('css/fonts/GothamProMedium.woff') format('woff2'),
+
+  url('css/fonts/GothamProMedium.ttf') format('truetype'),
+
+  url('css/fonts/GothamProMedium.svg') format('svg');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+}
+
+@font-face{
+
+  font-family: 'GothamPro';
+
+  src: url('css/fonts/GothamProRegular.eot');
+
+  src: url('css/fonts/GothamProRegular.eot') format('eot'),
+
+  url('css/fonts/GothamProRegular.woff') format('woff'),
+
+  url('css/fonts/GothamProRegular.woff') format('woff2'),
+
+  url('css/fonts/GothamProRegular.ttf') format('truetype'),
+
+  url('css/fonts/GothamProRegular.svg') format('svg');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');

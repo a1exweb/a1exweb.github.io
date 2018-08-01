@@ -1,0 +1,144 @@
+@import "partials/params";
+@import "partials/mixins";
+
+@mixin button-reg-log {
+  color: #f3295d;
+  background-color: #fff;
+  border: 1px solid #f3295d;
+  border-radius: 30px;
+  margin-top: 20px;
+  height: 42px;
+  text-transform: uppercase;
+  font-family: GothamPro-Bold;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: 1px;
+  color: #f3295d;
+  &:hover {
+    background-color: #f3295d;
+    color: #fff;
+  }
+}
+
+header {
+  #head {
+    #upper-block {
+      padding-top: 20px;
+      max-width: 1024px;
+      margin: 0 auto;
+      .logo {
+        float: left;
+      }
+      .login{
+        @include button-reg-log;
+        margin-right: 20px;
+        width: 96px;
+      }
+      .reg {
+        @include button-reg-log;
+        width: 218px;
+      }
+      .contact {
+        margin-top: 15px;
+        float: right;
+        a:first-child {
+          font-family: GothamPro-Medium;
+          font-size: 22px;
+          font-weight: 500;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.38;
+          letter-spacing: normal;
+          text-align: right;
+          color: #000000;
+        }
+        a:last-child {
+          font-family: GothamPro;
+          font-size: 17px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: right;
+          color: #f3295d;
+        }
+      }
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      margin: 48px auto;
+      a {
+        font-family: GothamPro;
+        font-size: 17px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000000;
+        &:hover {
+          color: #f3295d;
+        }
+        &:active {
+          color: #f3295d;
+          text-decoration: none;
+        }
+      }
+
+      span {
+        color: #cdd6e5;
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1070px) {
+  header #head #upper-block {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 1010px) {
+  header #head #upper-block {
+    max-width: 870px;
+  }
+  header #head #upper-block .contact a:first-child {
+    font-size: 18px;
+  }
+  header #head #upper-block .contact a:last-child {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 990px) {
+  #head nav {
+    display: grid !important;
+  }
+  #head nav a{
+    margin-bottom: 20px;
+  }
+  nav span {
+    display: none;
+  }
+
+  #head #upper-block {
+    max-width: 350px !important;
+    text-align: center;
+    .buttons {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #head #upper-block {
+    max-width: 250px !important;
+  }
+}

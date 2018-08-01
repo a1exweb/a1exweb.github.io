@@ -1,0 +1,75 @@
+@import "partials/params";
+@import "partials/mixins";
+
+main {
+  #why {
+    background-color: #f5f7fa;
+    margin: 0 auto;
+
+    .block-advantages {
+      max-width: 1024px;
+      margin: 90px auto;
+      padding-bottom: 90px;
+    }
+    .advantage{
+      margin-bottom: 50px;
+    }
+    .description-advantage{
+      float: left;
+      max-width: 350px;
+    }
+    h2 {
+      @include big-title;
+      margin-top: -30px;
+    }
+    img {
+      float: left;
+      margin-right: 20px;
+      margin-top: 25px;
+    }
+    h3 {
+      font-family: "GothamPro-Medium";
+      font-size: 22px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.14;
+      letter-spacing: normal;
+      text-align: left;
+    }
+    h4 {
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.44;
+      letter-spacing: normal;
+      color: #5d5d5d;
+    }
+  }
+}
+
+
+@media (max-width: 1070px) {
+  main #why .block-advantages {
+    max-width: 950px;
+  }
+}
+
+@media (max-width: 990px) {
+  main #why .block-advantages {
+    max-width: 300px;
+  }
+  main #why img {
+    display: flex;
+    margin: 0 auto;
+    float: none;
+  }
+  main #why h3, main #why h4 {
+    text-align: center;
+  }
+}
+
+
+
