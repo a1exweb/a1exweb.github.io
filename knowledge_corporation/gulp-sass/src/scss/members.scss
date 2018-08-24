@@ -1,0 +1,127 @@
+@import "partials/params";
+@import "partials/mixins";
+
+$color-btn--full: #fb835e;
+
+.members {
+
+  &__title {
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+  &__link {
+    margin-right: 20px;
+    border-bottom: none;
+    text-decoration: underline;
+    color: $default-color;
+    display: inline-block;
+  }
+  &__links {
+    margin-bottom: 40px;
+  }
+
+  &-down {
+
+    &__text {
+      margin-left: 65px;
+      max-width: 200px;
+    }
+    &__img {
+      width: 50px;
+      float: left;
+    }
+
+    &__profile {
+      // max-width: 330px;
+    }
+
+    &__name {
+      font-family: 'dinpro-bold';
+      font-size: 14px;
+      margin-bottom: 5px;
+      height: 50px;
+      display: block;
+      border-bottom: none;
+      text-decoration: underline;
+      // display: flex;
+      // align-items: center;
+      &--one_string{
+        line-height: 50px;
+      }
+    }
+    &__description, &__links {
+      font-size: $default-size;
+    }
+    &__link {
+      margin-right: 5px;
+      color: $default-color;
+      border-bottom: 1px solid $default-color;
+    }
+
+    &__btn {
+      @include button-border;
+      margin-bottom: 20px;
+      &--all {
+        @include button-border(10px, 35px);
+      }
+      &--full {
+        @include button-border(10px, 35px);
+        background: $default-color;
+        color: #fff;
+        margin-bottom: 20px;
+        &:hover {
+          background: $color-btn--full;
+          border: 1px solid $color-btn--full;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .members-down__text {
+    max-width: 240px;
+  }
+  .members-down__name--girl {
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .members__links {
+    max-width: 200px;
+  }
+  .members-down__text {
+    margin-left: 0px;
+  }
+  .members-down__text {
+    max-width: 260px;
+  }
+  .members-down__img {
+    margin-right: 10px;
+  }
+  .members-down__btn--full {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .members-down__text {
+    float: none;
+  }
+  .members-down__name {
+    font-size: $default-size;
+  }
+  .members-down__img {
+    width: 45px;
+    margin-right: 5px;
+  }
+}
+
+.block2 {
+  .members-down__profile {
+    // max-width: 330px !important;
+  }
+}
+
+// .members-down__profile {display: block !important;}

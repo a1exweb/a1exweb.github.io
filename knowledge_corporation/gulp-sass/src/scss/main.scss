@@ -1,0 +1,44 @@
+@import "partials/params";
+@import "partials/mixins";
+
+@font-face {
+  font-family: 'dinpro-regular';
+  src: url('fonts/dinpro.woff'), url('fonts/dinpro.woff2');
+}
+
+@font-face {
+  font-family: 'dinpro-bold';
+  src: url('fonts/dinpro-bold.woff'), url('fonts/dinpro-bold.woff2');
+}
+
+html, body {
+  @include clear;
+  width: 100%;
+  font-family: 'dinpro-regular';
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  @include clear;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+a {
+  color: $link-color;
+  border-bottom: 1px solid $link-color;
+
+  &:hover {
+    text-decoration: none;
+    color: $link-color;
+    border-bottom: none;
+  }
+}
+
+body, button, a, input {
+  outline: none !important;
+}

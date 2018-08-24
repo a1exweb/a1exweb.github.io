@@ -1,0 +1,32 @@
+@import "partials/params";
+@import "partials/mixins";
+
+$color-footer: #666;
+
+@mixin font-link($fz: 12px, $c: $color-footer, $bc: $color-footer) {
+  font-size: $fz;
+  color: $c;
+  border-bottom: 1px solid $bc;
+}
+
+.footer {
+  border-top: 1px solid #f2f2f2;
+  padding-top: 50px;
+  margin-top: 50px;
+
+  &__list {
+    @include clear-list;
+  }
+
+  &__link {
+      @include font-link;
+      &--big {
+      @include font-link(18px, $link-color, $link-color);
+      }
+  }
+  &__copy {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 12px;
+  }
+}

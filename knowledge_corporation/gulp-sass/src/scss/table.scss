@@ -1,0 +1,79 @@
+@import "partials/params";
+@import "partials/mixins";
+
+$bg-color: #ffe6de;
+
+.table {
+
+  .table, td, tr, th {
+    border: none;
+  }
+
+  th {
+    font-size: 10px;
+    color: #666;
+    border-bottom: 1px solid #ccc;
+  }
+
+  &__down {
+    font-size: 12px;
+    &:hover {
+      background: $bg-color;
+    }
+  }
+
+  & a {
+    border-bottom: 1px dotted $default-color;
+    margin-right: 15px;
+    color: $default-color !important;
+  }
+}
+
+.ui-tabs-active {
+  background: $bg-color !important;
+  border-radius: 5px;
+  & a {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .table {
+    overflow-x: scroll;
+  }
+}
+
+.ui-tabs .ui-tabs-panel {
+  padding: 1em 0em !important;
+}
+
+.page-link {
+  color: $default-color;
+  border: none;
+}
+
+.page-item--space {
+  line-height: 30px;
+}
+
+.pagination__link--active {
+  color: #000 !important;
+}
+
+.pagination__link {
+  position: relative;
+  display: block;
+  padding: .5rem .7rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  background-color: #fff;
+  border: none;
+  color: $default-color;
+}
+
+@media (max-width: 310px) {
+  .pagination__link {
+    padding: .5rem .5rem;
+  }
+}

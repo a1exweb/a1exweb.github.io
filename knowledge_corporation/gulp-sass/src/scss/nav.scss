@@ -1,0 +1,113 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.nav {
+
+  height: 125px;
+  border-bottom: 1px solid #f2f2f2;
+  display: flex;
+  align-items: center;
+
+  & .nav__right {
+    text-align: right;
+
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav__link {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav__link {
+    font-size: 60%;
+  }
+}
+
+.nav__btn--menu {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .nav__center {
+    display: none;
+  }
+  img[alt='search'], img[alt='profile'] {
+    display: none;
+  }
+  .nav__btn--menu {
+    display: inline-block;
+  }
+}
+
+
+
+@media (max-width: 390px) {
+  .nav__img {
+    zoom: 0.7;
+  }
+
+  .nav__span--brib {
+    left: -5px !important;
+  }
+  .nav__span--notify {
+    left: 0px !important;
+    color: #fd5520 !important;
+    background: none !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .nav__img {
+    zoom: 0.6;
+  }
+  .header__link {
+    font-size: 90%;
+  }
+}
+
+.menu__list {
+  @include clear-list;
+  text-align: center;
+  border-bottom: 1px solid #f2f2f2;
+
+  .menu__item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.menu--down {
+  display: none;
+}
+
+.brib, .notify {
+  position: relative;
+  display: inline-block;
+}
+
+.nav__span {
+  &--brib, &--notify {
+    font-size: 60%;
+    position: absolute;
+    top: -20px;
+  }
+  &--brib {
+    left: 0px;
+  }
+  &--notify {
+    left: 5px;
+    font-weight: bold;
+  }
+}
+
+.nav__span--notify {
+  color: #fff;
+  background: $default-color;
+  padding: 2px;
+  border-radius: 3px;
+  top: -25px;
+}

@@ -1,0 +1,31 @@
+@mixin clear {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin clear-list {
+  @include clear;
+  list-style: none;
+}
+
+@mixin flex-center($dir: column) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-border($p1: 5px, $p2: 15px) {
+  margin-top: 10px;
+  background: transparent;
+  border: 1px solid $default-color;
+  border-radius: 50px;
+  color: $default-color;
+  font-size: 14px;
+  padding: $p1 $p2;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+    background: $default-color;
+  }
+}

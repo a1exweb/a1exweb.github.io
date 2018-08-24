@@ -1,0 +1,94 @@
+@import "partials/params";
+@import "partials/mixins";
+
+$border-color: #f2f2f2;
+
+.courses {
+
+  &__title {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    @include button-border(10px, 35px);
+    margin-bottom: 90px;
+  }
+
+  &__packet {
+      max-width: 715px;
+      border-width: 2px;
+      border-color: rgb(255, 255, 255);
+      border-style: solid;
+      border-radius: 3px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 2px 8px 0px rgba(7, 70, 123, 0.3);
+      padding: 30px;
+      margin: 20px 0;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '';
+        background: url('img/bg-star.png');
+        width: 60px;
+        height: 60px;
+        top: -2px;
+        right: -2px;
+      }
+      & .packet__minititle {
+        font-size: $default-size;
+        color: #666;
+      }
+      & .packet__title {
+        text-decoration: underline;
+        font-size: 16px;
+        font-family: 'dinpro-bold';
+        display: block;
+        border-bottom: none;
+        &:hover {
+          color: $default-color;
+        }
+      }
+
+      & .packet__link {
+        font-size: 12px;
+        color: #666;
+        border-bottom: none;
+        display: inline-block;
+        text-decoration: underline;
+      }
+
+      & .packet__infosoc {
+        font-size: 14px;
+        color: #000;
+        font-weight: bold;
+        & span {
+          margin-right: 10px;
+        }
+        & .packet__like img {
+          margin-right: 3px;
+        }
+      }
+  }
+}
+
+@media (max-width: 768px) {
+  .courses__title {
+    border-top: 1px solid $border-color;
+    padding-top: 20px;
+    font-family: 'dinpro-bold';
+  }
+  .courses {
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+@media (max-width: 450px) {
+  .packet__infosoc {
+    max-width: 150px;
+  }
+  .courses .packet__infosoc span {
+    margin-right: 0px;
+  }
+}
