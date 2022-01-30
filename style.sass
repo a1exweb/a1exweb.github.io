@@ -1,0 +1,28 @@
+@mixin media-specify($width, $height)
+    @media screen and (max-width: $width), screen and (max-height: $height)
+        @content;
+$maxWidth: 1920;
+@mixin adaptiv-font($pcSize, $mobSize)
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 320;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+body
+    font-family: sans-serif
+    background: #9ebde9
+    overflow-x: hidden
+.content
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+img
+    max-height: 80vh
+    max-width: 100%
+h1
+    margin-bottom: 0
+    +adaptiv-font(42, 22)
+h2
+    margin-top: 0
+    text-transform: uppercase
+    letter-spacing: 10px
+    +adaptiv-font(26, 12)
