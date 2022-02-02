@@ -13,16 +13,31 @@
    <link rel="stylesheet" href="style.min.css">
 </head>
 <body>
-   <div class="content">
-      <h1>Александр Ярославцев</h1>
-      <h2>веб-разработчик</h2>
-      <div class="bg"></div>
-      <img src="photo.jpg" alt="Александр Ярославцев">
-   </div>
-   <script>
+   <a href="https://vk.com/a1exweb">
+      <div class="content">
+         <h1>Александр Ярославцев</h1>
+         <h2>веб-разработчик</h2>
+         <div class="bg"></div>
+         <img src="photo.jpg" alt="">
+      </div>
+   </a>
+   <!-- <script>
       setTimeout(function () {
          document.location='https://vk.com/a1exweb';
       }, 1000);   
+   </script> -->
+
+<p class="description">Разработка одностраничных сайтов на заказ, цена расчитывается индивидуально по Вашей заявке!</p>
+
+<a class="message" href="https://vk.com/im?media=&sel=-186401305&v=">Написать по важному вопросу</a>
+
+<!-- Put this script tag to the <head> of your page -->
+   <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+
+   <!-- Put this div tag to the place, where the Community messages block will be -->
+   <div id="vk_community_messages"></div>
+   <script type="text/javascript">
+     VK.Widgets.CommunityMessages("vk_community_messages", 76815501, {tooltipButtonText: "Заказать сайт", expandTimeout: 10000});
    </script>
 </body>
 </html>
